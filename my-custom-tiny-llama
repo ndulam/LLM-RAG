@@ -1,0 +1,10 @@
+FROM llama2
+# sets the temperature to 1 [higher is more creative, lower is more coherent]
+PARAMETER temperature 0.1
+PARAMETER top_k 10
+PARAMETER top_p 0.5
+# sets the context window size to 4096, this controls how many tokens the LLM can use as context to generate the next token
+PARAMETER num_ctx 4096
+
+#ollama create my-custom-tinyllama -f my-custom-tiny-llama
+#ollama run my-custom-tinyllama
